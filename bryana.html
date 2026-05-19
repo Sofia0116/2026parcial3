@@ -2,43 +2,42 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial">
-         <link rel="stylesheet" href="bryana.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bryana.css">
         <title>Pokedex</title>
-
 </head>
-
 <body>
-    <h1>MAESTRO POKEMON: BRYANA SOFIA ANTONIO DEL ANGEL</h1>
-    <img src="poke1.jpg" width="1000px" style="top:50px"  class="pokeimg1">
+    <h1>MAESTRO POKEMON: BRYANA SOFIA ANTONIO DEL ANGEL </h1>
+    <img src="pokemon1.jpg" width="400px" style="top:0px" class="pokeimg1">
     <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName"
     class="placeholder"><br>
     <img src="pokemaster.jpg" alt="Pokemaster" id="pokeImg" width="250px"
     class="pokeImg"><br>
 
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 200px; font-size: 15px;"></div> //cambiar pocision de nombre
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 220px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 240px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 260px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 260px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 300px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 320px; font-size: 15px;"></div>
-    <div id="pokeName" class="pokeimg1" style="left: 100px; top: 340px; font-size: 15px;"></div>
 
-    <div id="pokeid" class="pokeimg1" style="left: 600px; top: 500px; font-size: 200px; color: yellow;"></div>
-    <div id="pokeorder" class="pokeimg1" style="left: 700px; top: 500px; font-size: 20px; color: orange;"></div>
+    <div id="pokename" class="pokeimg1" style="left: 500px; top: 300px; font-size: 30px;"></div>
+    <div id="pokeHe" class="pokeimg1" style="left: 550px; top: 380px; font-size: 15px;"></div>
+    <div id="pokeWe" class="pokeimg1" style="left: 560px; top: 240px; font-size: 15px;"></div>
+    <div id="poketype" class="pokeimg1" style="left: 590px; top: 260px; font-size: 15px;"></div>
+    <div id="pokeitem" class="pokeimg1" style="left: 620px; top: 280px; font-size: 15px;"></div>
+    <div id="poketype" class="pokeimg1" style="left: 650px; top: 260px; font-size: 15px;"></div>
+    <div id="pokemove1" class="pokeimg1" style="left: 680px; top: 280px; font-size: 15px;"></div>
+    <div id="pokemove2" class="pokeimg1" style="left: 710px; top: 300px; font-size: 15px;"></div>
+    <div id="pokemove3" class="pokeimg1" style="left: 740px; top: 320px; font-size: 15px;"></div>
+    <div id="pokemove4" class="pokeimg1" style="left: 770px; top: 340px; font-size: 15px;"></div>
 
-    <button onclick="fetchPokemon()" class="button">Presiona</button>
-
+    <div  id="pokeid" class="pokeimg1" style="left: 600px; top: 500px; font-size: 20px; color: yellow;"></div>
+    <div id="pokeorder" class="pokeImage" style="left: 700px; top: 500px; font-size: 20px; color: orange;"></div>
+    
+    <button onclick="fetchPokemon()" class="boton-busqueda "> Presiona </button>
+    
     <div class="grafica">
-        <canvas id="miCanvas"></canvas>
+    <canvas id="miCanvas"></canvas>
     </div>
 
-    <scrip src="bryana.js"></scrip>
-    <scrip src="Chart.js"></scrip>
+    <script src="bryana.js"></script>
+    <script src="Chart.js"></script>
 
-</body>
-
-</html>
+    </body>
+    </html>
