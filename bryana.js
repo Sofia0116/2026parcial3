@@ -4,7 +4,6 @@ const fetchPokemon = () => {
     pokeName = pokeName.toLowerCase();
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
 
-
 fetch(url).then((res) => {
     if (res.status != "200") {
         console.log (res);
@@ -52,12 +51,12 @@ fetch(url).then((res) => {
         let element10=document.getElementById('pokemove4')
         element10.innerHTML=`Move 4: ${data.moves[3].move.name}`;
 
-        const miCanvas=document.getElementById(miCanvas).getcontext(20);
+        const miCanvas=document.getElementById("miCanvas").getContext("2d");
         if(window.miCanva != undefined)
         window.miCanva.destroy();
-        window.miCnava=new Chart(miCanvas,{
+        window.miCanva=new Chart(miCanvas,{
         type: "bar",
-        data:{
+        data: {
             labels:["HP", "Attack", "Defense", "Special-A", "Special-D", "Speed"],
             datasets:[
                 {
@@ -87,8 +86,8 @@ fetch(url).then((res) => {
         },
         options:{
             scales:{
-                x:{
-                    ticks:{
+                x: {
+                    ticks: {
                         maxRotacion: 90,
                         minRotacion: 90,
                         color:'purple',
@@ -103,7 +102,7 @@ fetch(url).then((res) => {
     }
 });
 
-const pkokeImage = (url) => {
+const pokeImage = (url) => {
     const pokePhoto = document.getElementById("pokeImg");
     pokePhoto.src = url;
 }
